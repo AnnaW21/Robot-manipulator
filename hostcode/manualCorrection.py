@@ -11,10 +11,10 @@ sp.serialBegin(baytrate = 115200)
 # sp.sendTraj(traj)
 
 #ЕБАНЫЕ радианы!!!
-deg = [0.0, 0.0, 0.0, 0.0, 0.0, -0.15]
+deg = [0.0, 0.0, 0.0, 0.0, 0.0, 0.4]
 speed = [0.5] * 6
 
-sp.serialSend(deg, speed)
+sp.serialSend(deg, speed, 90.0)
 sp.serialRead()
 
 # sp.serialSend(deg, speed)
